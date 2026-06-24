@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="lv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>SIA MKAA — Ремонт & Монтаж</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-inner">
+        <div class="logo">
+          <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="SIA MKAA logotips">
+        </div>
+        <nav class="nav">
+          <a href="#home">Sākums</a>
+          <a href="#services">Pakalpojumi</a>
+          <a href="#about">Par uzņēmumu</a>
+          <a href="#contacts">Kontakti</a>
+        </nav>
+      </div>
+    </header>
+
+    <div id="scroll-progress"></div>
+
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-layer floating-icons" aria-hidden="true">
+          <div class="float-icon">⛑️</div>
+          <div class="float-icon">🔧</div>
+          <div class="float-icon">📏</div>
+        </div>
+        <div class="hero-left">
+          <h1>SIA MKAA</h1>
+          <p class="tag">Remonts • Demontāža • Montāža • Būvdarbi</p>
+          <p class="lead">Profesionāli būvniecības un remonta darbi Jēkabpilī un reģionā. Kvalitatīvi, uzticami, savlaicīgi.</p>
+
+          <div class="moto">Mēs strādājam ātri un kvalitatīvi — jūsu būve drošās rokās.</div>
+
+          <div class="actions">
+            <a class="btn primary" href="https://wa.me/37128873141" target="_blank">Rakstīt WhatsApp</a>
+            <a class="btn ghost" href="tel:+37128873141">Zvanīt +371 288 73 141</a>
+          </div>
+          <div class="experience">
+            <ul class="exp-list">
+              <li>Meistaram profesionālā pieredze vairāk nekā 10 gadu.</li>
+              <li>Savs profesionālais instruments un aprīkojums — ātri un kvalitatīvi.</li>
+              <li>Darbi ar garantiju; individuāla pieeja katram projektam.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero-right">
+          <div class="uploaded-wrap">
+            <img class="uploaded-img tilt" src="{{ url_for('static', filename='img/sia_uploaded.png') }}" alt="SIA MKAA Uploaded">
+          </div>
+          <div class="card contact-card">
+            <h3>Kontaktinformācija</h3>
+            <p><strong>Īpašnieks:</strong> Arturs Ušakovs</p>
+            <p><strong>Adrese:</strong> Celtnieku Iela 3 - 6, Jēkabpils, Latvia, LV-5201</p>
+            <p><strong>Telefons:</strong> <a href="tel:+37128873141">+371 288 73 141</a></p>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/37128873141" target="_blank">Rakstīt</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section id="services" class="section">
+      <div class="container">
+        <h2>Mūsu pakalpojumi</h2>
+        <div class="services-grid">
+          <div class="service">🔧 Remonts</div>
+          <div class="service">🏗️ Demontāža un montāža</div>
+          <div class="service">🔩 Inženiertehnisko sistēmu uzstādīšana</div>
+          <div class="service">🧱 Vispārējo būvdarbu veikšana</div>
+          <div class="service">🚧 Kapitālie remonti</div>
+          <div class="service">📐 Konsultācijas un projektēšana</div>
+        </div>
+      </div>
+    </section>
+
+      <section id="about" class="section dark">
+      <div class="container">
+        <h2>Par uzņēmumu</h2>
+        <p>SIA MKAA nodrošina pilnu būvniecības pakalpojumu klāstu: sākot no veco konstrukciju demontāžas līdz beigu apdarei. Komanda ar daudzgadēju pieredzi remonta un būvniecības darbos.</p>
+      </div>
+    </section>
+
+      <section id="contacts" class="section">
+      <div class="container">
+        <h2>Kontakti</h2>
+        <div class="contact-grid">
+          <div class="contact-box">
+            <h3>Adrese</h3>
+            <p>Celtnieku Iela 3 - 6<br>Jēkabpils, Latvia, LV-5201</p>
+          </div>
+          <div class="contact-box">
+            <h3>Īpašnieks</h3>
+            <p>Arturs Ušakovs</p>
+          </div>
+          <div class="contact-box">
+            <h3>Sazināties</h3>
+            <p><a href="https://wa.me/37128873141" target="_blank">WhatsApp: +371 288 73 141</a></p>
+            <p>Telefons: <a href="tel:+37128873141">+371 288 73 141</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>© 2026 SIA MKAA — Arturs Ušakovs</div>
+        <div>Celtnieku Iela 3 - 6, Jēkabpils, LV-5201</div>
+      </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    <a class="fab-wa" href="https://wa.me/37128873141" target="_blank" aria-label="WhatsApp">💬</a>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SIA MKAA">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#ffcc00"/>
+      <stop offset="100%" stop-color="#ff9900"/>
+    </linearGradient>
+  </defs>
+  <rect rx="8" width="300" height="80" fill="#0d0d0d" />
+  <g transform="translate(14,18)">
+    <g transform="translate(0,0)">
+      <rect x="0" y="0" width="48" height="48" rx="6" fill="#111" stroke="#222"/>
+      <path d="M12 18 L20 10 L26 16 L18 24 Z" fill="#ffcc00" transform="translate(0,6) rotate(-12 18 18)"/>
+      <rect x="26" y="30" width="12" height="4" rx="2" fill="#ffcc00" transform="rotate(-20 32 32)"/>
+    </g>
+    <text x="72" y="36" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="url(#g)">SIA MKAA</text>
+  </g>
+</svg>
