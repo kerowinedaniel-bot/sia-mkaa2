@@ -15,6 +15,11 @@ body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,system-ui;background:linea
 .nav a{color:var(--muted);text-decoration:none;margin-left:18px;padding:8px 10px;border-radius:6px;transition:transform .22s,box-shadow .22s,background .22s}
 .nav a:hover{background:rgba(255,204,0,0.08);color:var(--accent);transform:translateY(-4px);box-shadow:0 10px 30px rgba(255,170,0,0.06)}
 
+/* mobile nav toggle */
+.nav-toggle{display:none;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted);font-size:20px;padding:8px 12px;border-radius:8px}
+.nav-wrapper{display:block}
+
+
 /* HERO with layered parallax + subtle construction grid */
 .hero{padding-top:120px;padding-bottom:80px;position:relative;overflow:visible}
 .hero:before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(0deg, rgba(255,255,255,0.01) 0 1px, transparent 1px 40px), repeating-linear-gradient(90deg, rgba(255,255,255,0.01) 0 1px, transparent 1px 40px);opacity:0.04;pointer-events:none}
@@ -92,7 +97,20 @@ h2{color:var(--accent);margin-top:0}
 
 /* responsive */
 @media(max-width:1000px){.services-grid{grid-template-columns:repeat(2,1fr)}.hero-right{width:320px}.logo img{height:48px}}
-@media(max-width:600px){h1{font-size:34px}.nav{display:none}.hero-inner{flex-direction:column}.services-grid{grid-template-columns:1fr}.hero-right{width:100%}}
+@media(max-width:800px){
+	.nav-toggle{display:inline-flex}
+	.nav-wrapper{position:fixed;right:14px;top:76px;background:linear-gradient(180deg,rgba(0,0,0,0.7),rgba(0,0,0,0.85));padding:12px;border-radius:10px;backdrop-filter:blur(6px);display:none;box-shadow:0 12px 40px rgba(0,0,0,0.6);z-index:140}
+	.nav-wrapper.open{display:block}
+	.nav a{display:block;margin:6px 0}
+}
+@media(max-width:600px){
+	h1{font-size:34px}
+	.hero-inner{flex-direction:column}
+	.services-grid{grid-template-columns:1fr}
+	.hero-right{width:100%}
+	.uploaded-img{max-width:92%}
+	.fab-wa{right:12px;bottom:12px;width:48px;height:48px}
+}
 
 /* uploaded image styling */
 .uploaded-wrap{margin-bottom:18px;display:flex;justify-content:center}

@@ -21,6 +21,18 @@
     requestAnimationFrame(raf);
   }
 
+  // mobile nav toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navWrapper = document.querySelector('.nav-wrapper');
+  if(navToggle && navWrapper){
+    navToggle.addEventListener('click', ()=>{
+      const isOpen = navWrapper.classList.toggle('open');
+      navToggle.setAttribute('aria-expanded', isOpen? 'true' : 'false');
+    });
+    // close when clicking a link
+    navWrapper.querySelectorAll('a').forEach(a=>a.addEventListener('click', ()=>{ navWrapper.classList.remove('open'); navToggle.setAttribute('aria-expanded','false'); }));
+  }
+
   // tilt effect for cards and services (safe wrapper so icons and images are preserved)
   const tiltables = document.querySelectorAll('.service, .card, .contact-box, .uploaded-img');
   tiltables.forEach(el=>{

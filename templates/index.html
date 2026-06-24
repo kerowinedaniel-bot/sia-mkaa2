@@ -12,12 +12,15 @@
         <div class="logo">
           <img src="{{ url_for('static', filename='img/logo.svg') }}" alt="SIA MKAA logotips">
         </div>
-        <nav class="nav">
-          <a href="#home">Sākums</a>
-          <a href="#services">Pakalpojumi</a>
-          <a href="#about">Par uzņēmumu</a>
-          <a href="#contacts">Kontakti</a>
-        </nav>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+        <div class="nav-wrapper" id="main-nav">
+          <nav class="nav">
+            <a href="#home">Sākums</a>
+            <a href="#services">Pakalpojumi</a>
+            <a href="#about">Par uzņēmumu</a>
+            <a href="#contacts">Kontakti</a>
+          </nav>
+        </div>
       </div>
     </header>
 
